@@ -19,8 +19,11 @@ models:
         description: NULL if the customer has not yet placed an order.
       - name: number of orders
         description: The total number of orders made by the customer.
-      - name: lifetime_value
-        description: The total revenue associated with the customer.
+#      - name: lifetime_value
+#        description: Add your description here
+#        tests:
+#          - not_null
+
 
   - name: fct_orders
     description: Complete orders model including the amount associated with each order.
