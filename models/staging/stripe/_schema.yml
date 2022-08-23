@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Staged payments data from Stripe.
+    columns: 
+      - name: payment_id
+        description: Primary key for payments.
+      - name: order_id
+        description: Foreign key to the orders data.
+      - name: payment_method
+        description: The method used by the customer to make a payment.
+      - name: status
+        description: The status of the payment after the first attempt.
+      - name: amount
+        description: The total amount of the payment in USD.
+      - name: created_at
+        description: The date the payment was initiated.
